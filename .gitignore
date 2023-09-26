@@ -1,0 +1,15 @@
+.idea
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+.envrc
+dsets
+runs
+/.pytest_cache/
+data_in_mat
+grit_data/**/*.pkl
+current_system.json
+data_tmp.json
+
+lightning_logs

@@ -1,0 +1,35 @@
+{
+  "system_name": "Toy",
+  "euler_convention": "ZXZ",
+  "body":[
+    { "name":"Sun", "rigid": false, "mass": 0.1, "position": [0, 0, 0], "velocity": [0, 0, 0], "angular_velocity": [0, 0, 0.1], "euler_angles": [0, 0.0, 0], "diameter":1.68514764E+9, "oblateness": 0.000015, "time_lag":1E-6, "Q":0.22 },
+    { "name":"b", "rigid": false, "mass": 5e-5, "orbital_elements": [1E1, 1.0E-03, 0.0102974425868, 0.0000000000000000E+00,  0.0, 1.57079632679], "center_mass": 0.08, "angular_velocity": [0.4, 0, 0], "euler_angles": [0.0, 1.5810937693816631, 1.57079632679], "diameter":1.43e8, "semi_axes":[5e8, 5e8, 1.2e9], "Q": 0.230177, "time_lag":2.2574e-05 }
+  ],
+  "current_time": 0.000,
+  "parameters":{
+    "tide"            : false,
+    "GR"              : false,
+    "step_size"       : 2.5e-1,
+    "save_interval"   : 1000.0,
+    "output_gaps"     : 1,
+    "coordinates"     : "central",
+    "scheme"          : "T2",
+    "potential_order" : 2
+  },
+  "tidal_pairs": {
+    "Sun": ["b"],
+    "b": ["Sun"]
+  },
+  "output_format": {
+    "orbital_elements": true,
+    "position": true,
+    "velocity": true,
+    "axis": true,
+    "spin": true,
+    "obliquity": true,
+    "axial_tilt": true,
+    "Hamiltonian": true,
+    "momentum": true,
+    "customize": false
+  }
+}

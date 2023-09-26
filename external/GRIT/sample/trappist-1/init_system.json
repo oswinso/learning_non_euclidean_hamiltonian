@@ -1,0 +1,48 @@
+{
+  "system_name": "TRAPPIST-1",
+  "euler_convention": "ZXZ",
+  "body":[
+    { "name":"TSun", "rigid": true, "mass":0.08, "position": [0, 0, 0], "velocity": [0, 0, 0], "angular_velocity": [0, 0, 695.4344], "euler_angles": [0, 0.0, 0], "diameter":1.68514764E+05, "oblateness": 0.000015, "time_lag":1E-6, "Q":0.22 },
+    { "name":"b", "rigid": true, "mass": 2.97733E-06, "orbital_elements": [1.110318E-02, 1.0E-07, 0.0102974425868, 0.0000000000000000E+00,  0.0, 1.57079632679], "center_mass": 0.08, "angular_velocity": [1518.99, 0, 0], "euler_angles": [0.0, 1.5810937693816631, 1.57079632679], "diameter":14360.2, "semi_axes":[6506.46, 6520.33, 6561.78], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"c", "rigid": true, "mass": 3.34950E-06, "orbital_elements": [1.520668E-02, 1.0E-07, 0.00872664625997, 0.0000000000000000E+00,  0.0, 0.900268544007], "center_mass": 0.08, "angular_velocity": [947.705, 0, 0], "euler_angles": [-0.670546164762067369, 1.57763356747010990328, 1.57079632679], "diameter":14016.2, "semi_axes":[6365.89, 6370.24, 6383.27], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"d", "rigid": true, "mass": 9.16102E-07, "orbital_elements": [2.142513E-02, 1.0E-07, 0.00523598775598, 0.0000000000000000E+00, 0.0, 1.47612863842], "center_mass": 0.08, "angular_velocity": [566.682, 0, 0], "euler_angles": [-0.0946687792272120193, 1.5760088695680123079256, 1.5707963267948966], "diameter":10040.7, "semi_axes":[4562.99, 4564.48, 4568.97], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"e", "rigid": true, "mass": 2.34751E-06, "orbital_elements": [2.815839E-02, 1.0E-07, 0.00698131700798, 0.0000000000000000E+00, 0.0, 5.33119977764], "center_mass": 0.08, "angular_velocity": [376.108, 0, 0], "euler_angles": [3.7604148027154771549, 1.5651095783147224985989, 1.57079632679], "diameter":11658.9, "semi_axes":[5300.51, 5300.98, 5302.38], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"f", "rigid": true, "mass":  2.69105E-06, "orbital_elements": [3.705241E-02, 1.0E-07, 0.0013962634016,   0.0000000000000000E+00,  0.0, 4.94905461466], "center_mass": 0.08, "angular_velocity": [249.173, 0, 0], "euler_angles": [3.3782583156176886266, 1.56943898397111562288056, 1.57079632679], "diameter":13404.6, "semi_axes":[6094.51, 6094.82, 6095.76], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"g", "rigid": true, "mass": 3.29224E-06, "orbital_elements": [4.508048E-02, 1.0E-07, 0.00645771823238, 0.0000000000000000E+00,  0.0, 4.08011762798], "center_mass": 0.08, "angular_velocity": [185.67, 0, 0], "euler_angles": [2.50931119931770322012, 1.5655869809663448716624, 1.57079632679], "diameter":14704.3, "semi_axes":[6685.65, 6685.86, 6686.48], "Q": 0.230177, "time_lag":2.2574e-05 },
+    { "name":"h", "rigid": true, "mass": 9.73359E-07, "orbital_elements": [5.955922E-02, 1.0E-07, 0.00349065850399, 0.0000000000000000E+00, 0.0, 0.0229320206683], "center_mass": 0.08, "angular_velocity": [122.265, 0, 0], "euler_angles": [-1.547864441201364723259, 1.570876367485689410879971, 1.57079632679], "diameter":9900.53, "semi_axes":[4501.65, 4501.71, 4501.89], "Q": 0.230177, "time_lag":2.2574e-05 }
+  ],
+  "current_time": 0.000,
+  "parameters":{
+    "tide"            : true,
+    "GR"              : true,
+    "step_size"       : 1e-5,
+    "save_interval"   : 100.0,
+    "output_gaps__"   : 10000000,
+    "output_gaps"     : 500,
+    "coordinates"     : "central",
+    "scheme"          : "M642",
+    "potential_order" : 2
+  },
+  "tidal_pairs": {
+    "TSun": ["b","c","d","e","f","g","h"],
+    "b": ["TSun"],
+    "c": ["TSun"],
+    "d": ["TSun"],
+    "e": ["TSun"],
+    "f": ["TSun"],
+    "g": ["TSun"],
+    "h": ["TSun"]
+  },
+  "output_format": {
+    "orbital_elements": true,
+    "position": true,
+    "velocity": true,
+    "axis": true,
+    "spin": true,
+    "obliquity": true,
+    "axial_tilt": true,
+    "Hamiltonian": true,
+    "momentum": true,
+    "customize": true
+  }
+}

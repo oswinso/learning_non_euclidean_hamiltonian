@@ -1,0 +1,34 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+BinPackArguments: false
+BinPackParameters: false
+ColumnLimit: 100
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: true
+DerivePointerAlignment: false
+PointerAlignment: Right
+Standard: Latest
+TabWidth: 4
+AccessModifierOffset: -3
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+FixNamespaceComments: true
+ReflowComments: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+  - Regex:           '^<'
+    Priority:        2
+  - Regex:           '^"((third_party|external|Eigen|Fastor|spdlog|fmt|ATen|doctest|cppad|toml\+\+|oneapi|tbb|autodiff)/|Nv|cuda)'
+    Priority:        3
+  - Regex:           '.\*'
+    Priority:        4
+---
+Language: Proto
+BasedOnStyle: Google
+ColumnLimit: 100
+IndentWidth: 4
+ReflowComments: true
+...

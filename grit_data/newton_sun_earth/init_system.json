@@ -1,0 +1,28 @@
+{ 
+    "system_name": "sun_earth",
+    "body": [
+        { "name": "Sun",   "rigid": true, "mass": 1.0,                        "position": [ 0.0,                    0.0,                   0.0                    ], "velocity": [ 0.0,                    0.0,                    0.0                    ], "angular_velocity": [ 0.0, 0.0, 9.04209781167040193978e+01 ], "euler_angles": [ -4.09105176667470859196e-01, 6.56470691552627150234e+00, 4.56054533546118345296e-01 ], "radius": 695700,   "oblateness": 0.000,   "time_lag": 1.9e-10,    "Q": 0.0380 },
+        { "name": "Earth", "rigid": true, "mass": 3.00329789031572885969E-06, "position": [ -1.685246489174995E-01, 9.687833048228511E-01, -4.120973411130758E-06 ], "velocity": [ -1.723394583068879E-02, -3.007660259271771E-03, 3.562931614781975E-08  ], "angular_velocity": [ 0.0, 0.0, 2.30159741706839754949e+03 ], "euler_angles": [ -4.09105176667470859196e-01, 1.57079632679489655800e+00, 0.00000000000000000000e+00 ], "radius": 6378.137, "oblateness": 0.00335, "time_lag": 2.2119e-05, "Q": 0.4118 }
+    ],
+    "current_time": 0.000,
+    "parameters": {
+        "tide":            false,
+        "GR":              false,
+        "step_size":       1e-4,
+        "save_interval":   100,
+        "output_gaps":     1,
+        "scheme":          "T2",
+        "potential_order": 2
+    },
+    "output_format": {
+        "position":         true,
+        "velocity":         true,
+        "rotmat":           true,
+        "Hamiltonian":      true,
+        "orbital_elements": true,
+        "obliquity":        true
+    },
+    "tidal_pairs": {
+        "Earth": ["Sun"]
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "system_name": "TRAPPIST-1",
+  "euler_convention": "ZXZ",
+  "body":[
+    { "name":"TSun", "rigid": false, "mass":0.08, "position": [0, 0, 0], "velocity": [0, 0, 0], "angular_velocity": [0, 0, 695.4344], "euler_angles": [0, 0.0, 0], "diameter":1.68514764E+05, "oblateness": 0.000015, "time_lag":1E-6, "Q":0.22 },
+    { "name":"b", "rigid": false, "mass": 2.97733E-06, "orbital_elements": [1.110318E-02, 1.0E-07, 0.0102974425868, 0.0000000000000000E+00,  0.0, 1.57079632679], "center_mass": 0.08, "angular_velocity": [1518.99, 0, 0], "euler_angles": [0.0, 1.5810937693816631, 1.57079632679], "diameter":14360.2, "semi_axes":[6506.46, 6520.33, 6561.78], "Q": 0.230177, "time_lag":2.2574e-05 }
+  ],
+  "current_time": 0.000,
+  "parameters":{
+    "tide"            : false,
+    "GR"              : false,
+    "step_size"       : 1e-5,
+    "save_interval"   : 100.0,
+    "output_gaps__"   : 10000000,
+    "output_gaps"     : 20,
+    "coordinates"     : "central",
+    "scheme"          : "M642",
+    "potential_order" : 2
+  },
+  "tidal_pairs": {
+    "TSun": ["b"],
+    "b": ["TSun"]
+  },
+  "output_format": {
+    "orbital_elements": true,
+    "position": true,
+    "velocity": true,
+    "axis": true,
+    "spin": true,
+    "obliquity": true,
+    "axial_tilt": true,
+    "Hamiltonian": true,
+    "momentum": true,
+    "customize": true
+  }
+}

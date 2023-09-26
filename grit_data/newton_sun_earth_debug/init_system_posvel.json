@@ -1,0 +1,100 @@
+{
+    "body": [
+        {
+            "Q": 0.038,
+            "angular_velocity": [
+                0.0,
+                0.0,
+                90.420978116704
+            ],
+            "euler_angles": [
+                -0.40910517666747087,
+                0.2815216083466852,
+                0.45605453354611836
+            ],
+            "inertia_tensor": [
+                8.650738298112349e-06,
+                8.650738298112349e-06,
+                8.650738298112349e-06
+            ],
+            "mass": 1.0,
+            "name": "Sun",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 6957000.0,
+            "rigid": true,
+            "symmetric": true,
+            "time_lag": 1.9e-10,
+            "velocity": [
+                5.1758517708876145e-08,
+                9.032872583050194e-09,
+                -1.0700512865186205e-13
+            ]
+        },
+        {
+            "Q": 0.4118,
+            "angular_velocity": [
+                0.0,
+                0.0,
+                2301.5974170683976
+            ],
+            "euler_angles": [
+                -0.40910517666747087,
+                1.5707963267948966,
+                0.0
+            ],
+            "inertia_tensor": [
+                2.1812825951168162e-15,
+                2.1812825951168162e-15,
+                2.188602131463509e-15
+            ],
+            "mass": 3.003297890315729e-06,
+            "name": "Earth",
+            "position": [
+                -0.1685246489174995,
+                0.9687833048228511,
+                -4.120973411130758e-06
+            ],
+            "radius": 63781.36999999999,
+            "rigid": true,
+            "symmetric": true,
+            "time_lag": 2.2119e-05,
+            "velocity": [
+                -0.017233894072171078,
+                -0.0030076512263991877,
+                3.5629209142691096e-08
+            ]
+        }
+    ],
+    "current_time": 0.0,
+    "output_format": {
+        "Hamiltonian": true,
+        "axial_tilt": false,
+        "axis": false,
+        "customize": false,
+        "momentum": false,
+        "obliquity": true,
+        "orbital_elements": true,
+        "position": true,
+        "spin": false,
+        "velocity": true
+    },
+    "parameters": {
+        "GR": false,
+        "coordinates": "central",
+        "output_gaps": 200,
+        "potential_order": 2,
+        "save_interval": 1.0,
+        "scheme": "T2",
+        "step_size": 0.0001,
+        "tide": false
+    },
+    "system_name": "sun_earth",
+    "tidal_pairs": {
+        "Earth": [],
+        "Sun": []
+    }
+}
